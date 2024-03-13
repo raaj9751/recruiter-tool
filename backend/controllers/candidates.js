@@ -1,7 +1,7 @@
 // controllers/candidates.js
 
-const Candidate  = require('../models/candidate');
-const CandidateSkills = require('../models/candidate');
+const { Candidate, CandidateSkills } = require('../models/candidate');
+
 // CRUD functions for candidates
 const getAllCandidates = async (req, res) => {
   try {
