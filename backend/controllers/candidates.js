@@ -1,7 +1,7 @@
 // controllers/candidates.js
 
-import { CandidateSkills, Candidate } from '../models/candidate';
-
+const Candidate  = require('../models/candidate');
+const CandidateSkills = require('../models/candidate');
 // CRUD functions for candidates
 const getAllCandidates = async (req, res) => {
   try {
