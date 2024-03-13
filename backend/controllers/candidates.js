@@ -1,8 +1,6 @@
 // controllers/candidates.js
 
-const { Pool } = require("pg");
-const { Candidate, CandidateSkills } = require("../models/candidate");
-const { getScore } = require("../controllers/scoreCalculation");
+const { Candidate, CandidateSkills } = require('../models/candidate');
 
 // CRUD functions for candidates
 const getAllCandidates = async (req, res) => {
