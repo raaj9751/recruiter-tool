@@ -9,7 +9,7 @@ const CandidateList = () => {
   useEffect(() => {
     const fetchCandidates = async () => {
         try {
-          const response = await axios.get('http://localhost:3012/candidates/getAllCandidates');
+          const response = await axios.get('https://recruiter-tool-31hd.onrender.com/candidates/getAllCandidates');
           setCandidates(response.data.candidates);
 
           
