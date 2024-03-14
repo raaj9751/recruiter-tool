@@ -37,7 +37,7 @@ const FormPage = () => {
   const handleSubmit = async e => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:3012/candidates/createCanditate', candidate);
+      await axios.post('https://recruiter-tool-31hd.onrender.com/candidates/createCanditate', candidate);
       alert('Candidate added successfully');
       setCandidate({
         name: '',
