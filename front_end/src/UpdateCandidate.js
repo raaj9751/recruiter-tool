@@ -21,7 +21,7 @@ const UpdateCandidate = ({ match }) => {
   useEffect(() => {
     const fetchCandidate = async () => {
       try {
-        const response = await axios.get(`http://localhost:3012/candidates/${id}`);
+        const response = await axios.get(`https://recruiter-tool-31hd.onrender.com/candidates/${id}`);
         setCandidate(response.data.candidate);
       } catch (error) {
         console.error('Error fetching candidate:', error);
@@ -38,7 +38,7 @@ const UpdateCandidate = ({ match }) => {
   const handleSubmit = async e => {
     e.preventDefault();
     try {
-      await axios.put(`http://localhost:3012/candidates/${id}`, candidate);
+      await axios.put(`https://recruiter-tool-31hd.onrender.com/candidates/${id}`, candidate);
       alert('Candidate details updated successfully');
       navigate('/');
     } catch (error) {
